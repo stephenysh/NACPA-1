@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fecacb3d-b03d-4925-b927-67ecd1283cee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activation_maximization.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/denoising/F16_GT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/denoising/snail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/feature_inversion/building.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/feature_inversion/monkey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flash_no_flash/cave01_00_flash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flash_no_flash/cave01_01_noflash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/imagenet1000_clsid_to_human.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inpainting/kate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inpainting/kate_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inpainting/library.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inpainting/library_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inpainting/vase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inpainting/vase_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/restoration/barbara.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/restoration/kate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sr/zebra_GT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sr/zebra_crop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/teaser_compiled.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/denoising.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_inversion.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flash-no-flash.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inpainting.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dcgan.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/downsampler.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/downsampler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/resnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/skip.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/texture_nets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/unet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restoration.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sr_prior_effect.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-resolution.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/denoising_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/denoising_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/feature_inversion_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/feature_inversion_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/inpainting_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/inpainting_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/matcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/matcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/perceptual_loss/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/perceptual_loss/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/perceptual_loss/matcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/perceptual_loss/matcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/perceptual_loss/perceptual_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/perceptual_loss/perceptual_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/perceptual_loss/vgg_modified.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/perceptual_loss/vgg_modified.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sr_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sr_utils.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/nac_offline_3$rcan_awgn_denoise_grayscale.coverage" NAME="rcan_awgn_denoise_grayscale Coverage Results" MODIFIED="1579504888510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$test_rcan_nacpa_denoising_rgb.coverage" NAME="test_rcan_nacpa_denoising_rgb Coverage Results" MODIFIED="1579508445313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$test_rcan_nacpa_denoising_gray.coverage" NAME="test_rcan_nacpa_denoising_gray Coverage Results" MODIFIED="1579513079916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$test_real_noise_removal_rcan_nacpa_dnd.coverage" NAME="test_real_noise_removal_rcan_nacpa_dnd Coverage Results" MODIFIED="1579521154006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$rcan_for_real_noise_removal.coverage" NAME="rcan_for_real_noise_removal Coverage Results" MODIFIED="1579514817208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$test_real_noise_removal_rcan_nacpa_sidd_val.coverage" NAME="test_real_noise_removal_rcan_nacpa_sidd_val Coverage Results" MODIFIED="1579516424600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$train_rcan_nacpa_denoising_gray.coverage" NAME="train_rcan_nacpa_denoising_gray Coverage Results" MODIFIED="1579506612693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$test_real_noise_removal_rcan_nacpa_sidd_benchmark.coverage" NAME="test_real_noise_removal_rcan_nacpa_sidd_benchmark Coverage Results" MODIFIED="1579520980994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$train_rcan_nacpa_denoising_rgb.coverage" NAME="train_rcan_nacpa_denoising_rgb Coverage Results" MODIFIED="1579507657605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$train_rcan_nacpa_for_real_noise_removal.coverage" NAME="train_rcan_nacpa_for_real_noise_removal Coverage Results" MODIFIED="1579515726315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nac_offline_3$rcan_awgn_denoise_rgb.coverage" NAME="rcan_awgn_denoise_rgb Coverage Results" MODIFIED="1579504862126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_dnd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="e#39#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_sidd_benchmark.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
+              <folding>
+                <element signature="e#39#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_sidd_val.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding>
+                <element signature="e#39#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_rcan_nacpa_denoising_gray.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+              <folding>
+                <element signature="e#39#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_rcan_nacpa_denoising_rgb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+              <folding>
+                <element signature="e#39#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="319">
+                <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>imsize</find>
+      <find>time</find>
+      <find>rgb2gray</find>
+      <find>SAVE_</find>
+      <find>SAVE_DURING</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/offline_oracle_rcan_gray_single_level_noise_withaug_post.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/examples/gray_oracle_mydata.py" />
+        <option value="$PROJECT_DIR$/test_offline_single_level_noise_rcan_rgb.py" />
+        <option value="$PROJECT_DIR$/offline_oracle_rcan_single_level_noise_withaug_post.py" />
+        <option value="$PROJECT_DIR$/examples/oracle_mydata.py" />
+        <option value="$PROJECT_DIR$/rcan_awgn_denoise_grayscale.py" />
+        <option value="$PROJECT_DIR$/rcan_awgn_denoise_rgb.py" />
+        <option value="$PROJECT_DIR$/offline_rcan_gray_single_level_noise_withaug_post.py" />
+        <option value="$PROJECT_DIR$/examples/gray_mydata.py" />
+        <option value="$PROJECT_DIR$/examples/mydata2.py" />
+        <option value="$PROJECT_DIR$/examples/mydata.py" />
+        <option value="$PROJECT_DIR$/examples/single_level_mydata.py" />
+        <option value="$PROJECT_DIR$/offline_oracle_rcan_single_level_noise_withaug_4rwn.py" />
+        <option value="$PROJECT_DIR$/train_rcan_awgn_denoise_rgb.py" />
+        <option value="$PROJECT_DIR$/train_rcan_nacpa_denoising_gray.py" />
+        <option value="$PROJECT_DIR$/train_rcan_nacpa_denoising_rgb.py" />
+        <option value="$PROJECT_DIR$/train_rcan_awgn_denoise_grayscale.py" />
+        <option value="$PROJECT_DIR$/rcan_for_real_noise_removal.py" />
+        <option value="$PROJECT_DIR$/offline_rcan_single_level_noise_withaug_post_trainset_4rwn.py" />
+        <option value="$PROJECT_DIR$/real_world_noise_estimator.py" />
+        <option value="$PROJECT_DIR$/prepare_hdf5_files.py" />
+        <option value="$PROJECT_DIR$/test_offline_single_level_noise_rcan_4rwn_rgb_sidd_val_with_vdn.py" />
+        <option value="$PROJECT_DIR$/test_offline_single_level_noise_rcan_4rwn_rgb_sidd_benchmark_with_vdn.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_dnd.py" />
+        <option value="$PROJECT_DIR$/test_rcan_nacpa_denoising_gray.py" />
+        <option value="$PROJECT_DIR$/test_rcan_nacpa_denoising_rgb.py" />
+        <option value="$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_sidd_benchmark.py" />
+        <option value="$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_sidd_val.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="2" />
+    <option name="y" value="23" />
+    <option name="width" value="1427" />
+    <option name="height" value="808" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nac_offline_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nac_offline_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nac_offline_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nac_offline_3" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nac_offline_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nac_offline_3" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nac_offline_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nac_offline_3" type="462c0819:PsiDirectoryNode" />
+              <item name="vdn_" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.test_real_noise_removal_rcan_nacpa_dnd">
+    <configuration name="test_rcan_nacpa_denoising_gray" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_rcan_nacpa_denoising_gray.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_rcan_nacpa_denoising_rgb" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_rcan_nacpa_denoising_rgb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_real_noise_removal_rcan_nacpa_dnd" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_dnd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_real_noise_removal_rcan_nacpa_sidd_benchmark" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_sidd_benchmark.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_real_noise_removal_rcan_nacpa_sidd_val" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_sidd_val.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_rcan_awgn_denoise_grayscale" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_rcan_awgn_denoise_grayscale.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_rcan_awgn_denoise_rgb" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_rcan_awgn_denoise_rgb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_rcan_for_real_noise_removal" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_rcan_for_real_noise_removal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_rcan_nacpa_denoising_gray" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_rcan_nacpa_denoising_gray.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_rcan_nacpa_denoising_rgb" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_rcan_nacpa_denoising_rgb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_rcan_nacpa_for_real_noise_removal" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="nac_offline_3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://huangyuan@172.31.20.24:22/home/huangyuan/anaconda2/envs/pytorch0.4_py3.6/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_rcan_nacpa_for_real_noise_removal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.train_rcan_awgn_denoise_grayscale" />
+      <item itemvalue="Python.train_rcan_nacpa_denoising_gray" />
+      <item itemvalue="Python.train_rcan_nacpa_denoising_rgb" />
+      <item itemvalue="Python.test_rcan_nacpa_denoising_rgb" />
+      <item itemvalue="Python.test_rcan_nacpa_denoising_gray" />
+      <item itemvalue="Python.train_rcan_for_real_noise_removal" />
+      <item itemvalue="Python.train_rcan_nacpa_for_real_noise_removal" />
+      <item itemvalue="Python.test_real_noise_removal_rcan_nacpa_sidd_val" />
+      <item itemvalue="Python.test_real_noise_removal_rcan_nacpa_sidd_benchmark" />
+      <item itemvalue="Python.test_real_noise_removal_rcan_nacpa_dnd" />
+      <item itemvalue="Python.train_rcan_awgn_denoise_rgb" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fecacb3d-b03d-4925-b927-67ecd1283cee" name="Default Changelist" comment="" />
+      <created>1579500011648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579500011648</updated>
+      <workItem from="1579500013007" duration="21335000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21335000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2" y="23" width="1427" height="808" extended-state="1" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25559565" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="File Transfer" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20670392" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>create_augmentations(test_img_np)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="64" lean-forward="true" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+          <folding>
+            <element signature="e#1#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/gray_oracle_mydata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/oracle_mydata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/remote_sources/419074935/342641415/torch/nn/modules/conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="300" selection-start-line="300" selection-end-line="300" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/gray_mydata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/common_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/aid_finetune.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-676" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/cifar10.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/mydata2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="107" column="49" lean-forward="true" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/mydata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_offline_single_level_noise_rcan_rgb_no_aug_mean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/oracle_mydata_no_aug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/single_level_mydata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_rcan_awgn_denoise_grayscale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="141" column="25" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_rcan_nacpa_denoising_gray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_rcan_nacpa_denoising_rgb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="153" column="14" lean-forward="true" selection-start-line="153" selection-start-column="14" selection-end-line="153" selection-end-column="14" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_rcan_awgn_denoise_rgb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="143" column="25" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_rcan_for_real_noise_removal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_world_noise_estimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare_hdf5_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_rcan_nacpa_for_real_noise_removal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="961">
+          <caret line="199" column="29" selection-start-line="199" selection-start-column="29" selection-end-line="199" selection-end-column="29" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_offline_single_level_noise_rcan_4rwn_rgb_sidd_benchmark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_offline_single_level_noise_rcan_4rwn_rgb_dnd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="319">
+            <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_rcan_nacpa_denoising_gray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_rcan_nacpa_denoising_rgb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_dnd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_sidd_benchmark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_real_noise_removal_rcan_nacpa_sidd_val.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="e#39#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
